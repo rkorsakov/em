@@ -32,7 +32,7 @@ type UpdateSubscriptionRequest struct {
 
 type SubscriptionSummary struct {
 	TotalCost int `json:"total_cost" db:"total_cost"`
-	Count     int `json:"count"`
+	Count     int `json:"count" db:"count"`
 }
 
 type SummaryRequest struct {

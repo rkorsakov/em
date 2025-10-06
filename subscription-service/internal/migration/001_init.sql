@@ -4,8 +4,8 @@ CREATE TABLE IF NOT EXISTS subscriptions
     service_name VARCHAR(255) NOT NULL,
     price        INTEGER      NOT NULL CHECK (price >= 0),
     user_id      VARCHAR(36)         NOT NULL,
-    start_date   VARCHAR(7)   NOT NULL,
-    end_date     VARCHAR(7),
+    start_date   VARCHAR(10)   NOT NULL,
+    end_date     VARCHAR(10),
     created_at   TIMESTAMP        DEFAULT CURRENT_TIMESTAMP,
     updated_at   TIMESTAMP        DEFAULT CURRENT_TIMESTAMP
 );
